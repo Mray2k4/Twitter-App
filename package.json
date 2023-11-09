@@ -10,5 +10,8 @@
     "Twitter"
   ],
   "author": "Marque Ray",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
