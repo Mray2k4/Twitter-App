@@ -2,7 +2,7 @@ import './App.css';
 import NavScrollExample from './navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
-import Retweets from './components/Retweets';
+import Retweets from './components/Retweets'
 
 function App() {
   console.log(window.location)
