@@ -3,13 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from "react-router-dom";
+import Link from "react-router-dom";
 
 function NavScrollExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Twitter</Navbar.Brand>
+        <Navbar.Brand>Twitter</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -17,8 +17,8 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <NavLink to='/Home'>Home</NavLink>
-            {/* <Link to='/Retweets' >Randowm Tweet</Link> */}
+            <Nav.Link href='/Home'>Home</Nav.Link>
+            <Nav.Link href='/Retweets' >Randowm Tweet</Nav.Link>
             {/* <Nav.Link href="#" disabled>
               Link
             </Nav.Link> */}
