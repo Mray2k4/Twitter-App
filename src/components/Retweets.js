@@ -1,12 +1,16 @@
 import React from 'react'
+import TweetBox from "./TweetBox";
 
-
-function Retweets() {
+function Retweets(openTweet, setOpenTweet, btnOpen) {
   return (
-    <div>
-    <h2>Retweets</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, rem. Minus mollitia pariatur sit molestiae ipsa sint praesentium aut, illo neque dignissimos officiis placeat hic explicabo nesciunt iure delectus laborum!</p>
-    </div>
+    <>
+    <div>Retweets</div>
+      {/* <button className="openTweetBtn"
+       onClick={btnOpen}
+        >Open</button>
+      {openTweet && <TweetBox/>} */}
+  
+    </>
   )
 }
 
