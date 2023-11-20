@@ -1,11 +1,13 @@
 import React from 'react'
-import Retweets from "./Retweets";
+// import Retweets from "./Retweets";
 
-function TweetBox(openTweet) {
+function TweetBox({closeTweet}) {
   return (
     <div className='tweetBackgornd'>
       <div className="tweetContainer">
-        <button> X </button>
+        <div className='closeBtn' >
+        <button onClick={() => closeTweet(false)} > X </button>
+        </div>
         <div className="title">
           <h2>Username</h2>
           <div className="body">

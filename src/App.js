@@ -33,7 +33,7 @@ function btnOpen() {
       <button className="openTweetBtn"
        onClick={btnOpen}
         >Open</button>
-      {openTweet && <TweetBox/>}
+      {openTweet && <TweetBox closeTweet={setOpenTweet}/>}
       </header>
       
       <Retweets
