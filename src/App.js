@@ -36,10 +36,6 @@ function btnOpen() {
       {openTweet && <TweetBox closeTweet={setOpenTweet}/>}
       </header>
       
-      <Retweets
-      openTweet={openTweet}
-      setOpenTweet={setOpenTweet} 
-      />
     </div>
   );
 }
