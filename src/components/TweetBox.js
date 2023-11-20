@@ -1,4 +1,5 @@
 import React from 'react'
+import './TweetBox.css'
 // import Retweets from "./Retweets";
 
 function TweetBox({closeTweet}) {

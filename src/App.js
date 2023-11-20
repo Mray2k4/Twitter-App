@@ -4,7 +4,7 @@ import NavScrollExample from './navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import Retweets from './components/Retweets';
-import TweetBox from './components/TweetBox'
+import TweetBox from './components/TweetBox';
 
 function App() {
   console.log(window.location)
