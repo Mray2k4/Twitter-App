@@ -12,10 +12,14 @@
     width: 500px;
     height: 500px;
     border-radius: 12px;
-    background-color: white;
+    background-color: rgb(177, 204, 226);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     padding: 25px;
   }
   
+ .closeBtn {
+    float: right;
+    padding-left: 420px;
+ }
