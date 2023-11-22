@@ -17,8 +17,8 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href='/Home'>Home</Nav.Link>
-            <Nav.Link href='/Retweets' >Randowm Tweet</Nav.Link>
+            <Nav.Link className='home' href='/Home'>Home</Nav.Link>
+            <Nav.Link className='retweets' href='/Retweets' >Random Tweet</Nav.Link>
             {/* <Nav.Link href="#" disabled>
               Link
             </Nav.Link> */}

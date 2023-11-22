@@ -45,3 +45,15 @@
 .search {
   text-align: right;
 }
+
+.home:hover {
+  background-color: rgb(89, 89, 88);
+  /* width: 80px; */
+  width: auto;
+}
+
+.retweets:hover {
+  background-color: rgb(89, 89, 88);
+  /* width: 120px; */
+  width: auto;
+}
