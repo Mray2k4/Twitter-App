@@ -18,26 +18,25 @@ function App() {
       break
   }
 
-const [openTweet, setOpenTweet] = useState(false);
 
-function btnOpen() {
-  setOpenTweet(true)
+function api() {
+  fetch('/api/tweets')           //api for the get request
+  .then(res => res.json())
+  .then(function(data){
+	console.log(data)
+  });
 }
   
-  return (
-    <div className="App">
-      <header className="App-header">
-        <NavScrollExample/>
-      <h1>Twitter Showcase</h1>
+return (
+  <div className="App">
+    <header className="App-header">
+      <NavScrollExample/>
+    <h1>Twitter Showcase</h1>
       {component}
-      <button className="openTweetBtn"
-       onClick={btnOpen}
-        >Open</button>
-      {openTweet && <TweetBox closeTweet={setOpenTweet}/>}
-      </header>
-      
-    </div>
-  );
+     </header>
+    
+  </div>
+);
 }
 
 export default App;
