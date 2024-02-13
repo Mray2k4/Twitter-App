@@ -1,16 +1,18 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3001;
 const axios = require('axios');
 const path = require('path');
+import axios from 'axios';
 
 console.log(axios.isCancel('something'));
 
 
-app.use('/static', express.static('static'));
+// app.use('/static', express.static('static'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/static/index.html'));
+  // res.sendFile(path.join(__dirname, '/static/index.html'));
+  res.send('Marque')
 })
 
 app.get('/api/tweets', function(req, res){
@@ -36,3 +38,4 @@ app.get('/api/tweets', function(req, res){
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 })
+
