@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = 3000;
 const axios = require('axios');
 const path = require('path');
 import axios from 'axios';
@@ -15,15 +15,15 @@ app.get('/', (req, res) => {
   res.send('Marque')
 })
 
-app.get('/api/tweets', function(req, res){
+app.post('/api/tweets', function(req, res){
    // res.send(character);
-   const apiUrl = `https://api.twitter.com/2/tweets/1742229265599344708`
+   const apiUrl = 'https://api.twitter.com/2/tweets/1742229265599344708'
    const token = 'AAAAAAAAAAAAAAAAAAAAAPly9QAAAAAAQP4Qf6PfN0NeU4L5keo%2B7kae%2Fs0%3DEQIp2W7jkVldFBLvOOFtSJXl2vWEe3f1J1STKMTyWEbsogNYfE'
    const config = {
     headers: { Authorization: `Bearer ${token}` },
   };
 
-   axios.get(apiUrl, config)
+   axios.post(apiUrl, config)
   .then(function (response) {
     // handle success
     res.send(response.data);

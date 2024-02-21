@@ -29,18 +29,35 @@ function App() {
 // }
 
 
+// Original Code //
+
 useEffect(() => {
 async function apiList() {
-  const url = 'http://localhost:3001/api/tweets'
+  const url = 'http://localhost:3000/api/tweets'
   const token = 'AAAAAAAAAAAAAAAAAAAAAPly9QAAAAAAQP4Qf6PfN0NeU4L5keo%2B7kae%2Fs0%3DEQIp2W7jkVldFBLvOOFtSJXl2vWEe3f1J1STKMTyWEbsogNYfE'
   const res = await axios.get(url, {
     headers: { Authorization: `Bearer ${token}`}
   })
   console.log(res.data)
 };
-
   apiList();
 }, [])
+
+
+// Jsonplaceholder //
+
+// const [title, setTitle] = useState([])
+// const url = 'https://jsonplaceholder.typicode.com/posts'
+// const token = 'AAAAAAAAAAAAAAAAAAAAAPly9QAAAAAAQP4Qf6PfN0NeU4L5keo%2B7kae%2Fs0%3DEQIp2W7jkVldFBLvOOFtSJXl2vWEe3f1J1STKMTyWEbsogNYfE'
+
+// useEffect(() => {
+//   async function apiList() {
+//     const res = await axios.get(`${url}/1`)
+//     setTitle(res.data.title)
+//     console.log(res.data)
+//   };
+//     apiList();
+//   }, [])
 
 
   
@@ -50,6 +67,7 @@ return (
       <NavScrollExample/>
     <h1>Twitter Showcase</h1>
       {component}
+      {/* {title} */}
     
      </header>
   
