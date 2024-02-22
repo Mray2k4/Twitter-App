@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   res.send('Marque')
 })
 
-app.post('/api/tweets', function(req, res){
+app.get('/api/tweets', function(req, res){
    // res.send(character);
    const apiUrl = 'https://api.twitter.com/2/tweets/1742229265599344708'
    const token = 'AAAAAAAAAAAAAAAAAAAAAPly9QAAAAAAQP4Qf6PfN0NeU4L5keo%2B7kae%2Fs0%3DEQIp2W7jkVldFBLvOOFtSJXl2vWEe3f1J1STKMTyWEbsogNYfE'
@@ -23,7 +23,7 @@ app.post('/api/tweets', function(req, res){
     headers: { Authorization: `Bearer ${token}` },
   };
 
-   axios.post(apiUrl, config)
+   axios.get(apiUrl, config)
   .then(function (response) {
     // handle success
     res.send(response.data);
